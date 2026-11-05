@@ -1,0 +1,24 @@
+# Final image prompts
+
+Mode: **built-in imagegen**, with a separate generation for each asset. Alternate product photographs reference the corresponding generated main product photograph. Files are saved in `dist/assets/` as WebP; the unmodified generated PNG originals remain at the default imagegen destination. `scripts/prepare-assets.py` documents the exact original-to-production mapping and performs only format/size optimization.
+
+## Hero — `dist/assets/hero.webp`
+
+Use case: photorealistic-natural. Create one exceptionally beautiful landscape 3:2 editorial photograph for boutique florist Petal & Stem’s website hero. A lush slightly untamed asymmetrical garden bouquet in a weathered pale terracotta ceramic vase, peach and dusty blush dahlias, creamy garden roses, burgundy cosmos, tiny white flowers, branching green foliage. Bouquet situated center right occupying most of the frame, photographed at a pale oak workbench against warm ivory plaster wall in a natural-light florist studio. Fine art analog film aesthetic, soft dappled morning window light from left, delicate leaf shadows against wall, tactile botanical detail, muted natural colors, organic but artfully arranged. Composition suitable for a large image in the right half of a split editorial hero, flower heads fully visible at top, vase visible at bottom. No people, no text, no letters, no logo, no graphic borders. High-end real floral photography, believable stems and petals, no oversaturated colors.
+
+## Product photographs
+
+Shared prompt: Use case: photorealistic-natural. Asset type: premium boutique flower shop website photography. [Subject below.] Portrait 4:5 composition, entire bouquet comfortably in frame including tied stems and paper wrapper, leaning casually against a warm pale beige plaster studio wall on a light oak table. Bouquet fills 80 percent of photograph, shot at flower eye level. Elegant natural window lighting from left, subtle shadows, tactile analog-film aesthetic, restrained muted realistic colors, extremely beautiful real botanical detail. No text, no watermark, no logos, no graphic frames.
+
+- **Sunday Morning — `dist/assets/sunday-morning.webp`:** One hand-tied bouquet of creamy white garden roses, buttery yellow ranunculus, white snapdragons, tiny chamomile daisies, and soft green eucalyptus, wrapped loosely in ivory tissue and brown kraft paper. Fresh soft airy pale yellow and cream palette.
+- **Garden Party — `dist/assets/garden-party.webp`:** One generous hand-tied bouquet of peach dahlias, hot pink zinnias, coral garden roses, lavender asters, and feathery green foliage, wrapped loosely in ivory tissue and brown kraft paper. Joyful warm pink and coral palette.
+- **Softly Spoken — `dist/assets/softly-spoken.webp`:** One graceful hand-tied bouquet of pale blush garden roses, mauve lisianthus, lavender scabiosa, delicate white astrantia and silver eucalyptus, wrapped loosely in ivory tissue and brown kraft paper. Gentle dusty pink and mauve palette.
+- **Wild at Heart — `dist/assets/wild-at-heart.webp`:** One loose asymmetrical hand-tied bouquet of burgundy dahlias, orange ranunculus, ivory cosmos, rust chrysanthemums and wild branching green foliage, wrapped loosely in ivory tissue and brown kraft paper. Deep rich autumn palette.
+
+## Alternate photographs — `dist/assets/{product-id}-detail.webp`
+
+Use case: photorealistic-natural. The attached image is the reference for the exact bouquet product. Create a second editorial product photograph of this same bouquet, from a different angle: closer, overhead three-quarter view, the paper-wrapped bouquet laid gently on a pale wooden florist workbench, with its flower heads toward the upper left and tied stems toward the lower right. Keep exactly the same flower varieties, flower color palette, approximate flower counts, paper wrapper and ribbon as the reference. Photograph in matching warm natural window light with soft shadows, tactile detail, realistic botanical anatomy. A genuine alternate product photograph, NOT a crop of the original. Portrait 4:5 composition, no text or logos, no vase, no people, no additional accessories.
+
+## Studio — `dist/assets/studio.webp`
+
+Use case: photorealistic-natural. Asset type: premium boutique flower shop website photography. A candid editorial photograph inside a beautiful small independent florist studio. Cropped view of a woman in an oatmeal linen apron, face outside the top of the frame, hands thoughtfully arranging pink, peach, cream flowers over a worn wooden workbench. Flower buckets and old terracotta pots around her, golden soft window light, cream walls, imperfect tactile details. Relaxed real working studio, no posing, 4:3 landscape composition. Elegant natural window lighting from left, subtle shadows, tactile analog-film aesthetic, restrained muted realistic colors, extremely beautiful real botanical detail. No text, no watermark, no logos, no graphic frames.

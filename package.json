@@ -1,0 +1,15 @@
+{
+  "name": "petal-and-stem",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/shop.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/shop.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1"
+  }
+}
