@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petal & Stem — Cliente da API</title>
+  <style>
+    * { box-sizing: border-box; } [hidden] { display:none!important; }
+    body { margin: 0; background: #f7f3eb; color: #253c30; font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 1000px; margin: auto; padding: 30px 20px; }
+    h1 { font: 2.5rem/1.2 Georgia, serif; } h2 { font: 1.6rem Georgia, serif; }
+    a { color: #294e39; } nav { display: flex; gap: 20px; flex-wrap:wrap; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    section { background: #fffdf8; border: 1px solid #d2d9cf; border-radius: 10px; padding: 24px; }
+    label { display: block; margin-top: 12px; } input, select, textarea, button { font: inherit; }
+    input:not([type=checkbox]), select, textarea { width: 100%; padding: 10px; border: 1px solid #778c7b; border-radius: 4px; background: white; }
+    button { margin-top: 16px; padding: 10px 16px; background: #294e39; color: white; border: 0; border-radius: 4px; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: wait; } :focus-visible { outline: 3px solid #b45c36; outline-offset: 3px; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eef2eb; padding: 16px; max-height: 500px; overflow: auto; }
+    #notice { min-height: 28px; } .hint { color: #526455; font-size: .9rem; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Navegação"><a href="/">Loja</a><a href="/conta.html">Minha conta</a><a href="/docs">Documentação da API</a></nav>
+  <h1>Pedidos da floricultura</h1>
+  <p>Cliente de demonstração que consome a API REST com JavaScript. Os pedidos são salvos no SQLite local; não há pagamento ou entrega real.</p>
+  <p id="notice" role="status" aria-live="polite">Carregando catálogo…</p>
+  <section aria-label="Sua sessão"><p id="session-name">Conferindo sua sessão…</p><a id="login-link" href="/conta.html?next=/cliente">Entrar ou criar conta</a><button id="client-logout" type="button" hidden>Sair da conta</button></section>
+  <div class="grid" id="order-workspace" hidden>
+    <section>
+      <h2>Novo pedido</h2>
+      <form id="order-form">
+        <label for="product">Buquê</label><select id="product" name="product" required disabled></select>
+        <label for="size">Tamanho</label><select id="size" name="size"><option value="petite">Pequeno</option><option value="classic" selected>Médio (+ US$ 20)</option><option value="abundant">Grande (+ US$ 40)</option></select>
+        <label for="color">Cor do buquê</label><select id="color" name="color" required disabled></select>
+        <p class="hint">As fotos mostram a paleta original. Nos girassóis, a cor orienta as flores de apoio e a embalagem.</p>
+        <label for="description">Descreva o buquê que você imagina</label><textarea id="description" name="description" minlength="10" maxlength="1000" rows="3" required placeholder="Conte o estilo, as flores e a embalagem que você imagina."></textarea>
+        <label for="quantity">Quantidade</label><input id="quantity" name="quantity" type="number" min="1" max="9" value="1" required>
+        <label><input name="vase" type="checkbox"> Incluir vaso (+ US$ 18 por buquê)</label>
+        <label for="zip">Código postal de entrega (ZIP)</label><input id="zip" name="zip" value="97201" pattern="[0-9]{5}" required aria-describedby="zip-hint">
+        <p id="zip-hint" class="hint">Área de exemplo: 97201–97206. Frete de US$ 6 ou US$ 9 por buquê.</p>
+        <label for="date">Data de entrega</label><select id="date" name="date" required disabled></select>
+        <label for="message">Mensagem do cartão</label><textarea id="message" name="message" maxlength="240" rows="2"></textarea>
+        <button id="create" type="submit" disabled>Criar pedido demonstrativo</button>
+      </form>
+    </section>
+    <section>
+      <h2>Consultar e acompanhar</h2>
+      <form id="lookup-form">
+        <label for="order-id">Identificador do pedido</label><input id="order-id" required placeholder="UUID retornado na criação">
+        <button type="submit">Consultar pedido</button>
+      </form>
+      <form id="status-form">
+        <label for="status">Próximo estado</label><select id="status"><option value="em_preparacao">Em preparação</option><option value="enviado">Enviado</option><option value="entregue">Entregue</option><option value="cancelado">Cancelado</option></select>
+        <button type="submit">Atualizar estado</button>
+      </form>
+      <button id="list" type="button">Listar últimos pedidos</button>
+      <p class="hint">Você pode cancelar seus pedidos antes do envio. As demais etapas são atualizadas pela equipe administrativa.</p>
+      <pre id="result" aria-label="Resposta JSON da API">As respostas da API aparecerão aqui.</pre>
+    </section>
+  </div>
+</main>
+<script type="module" src="/cliente.js"></script>
+</body>
+</html>

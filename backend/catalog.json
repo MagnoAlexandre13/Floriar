@@ -1,0 +1,163 @@
+[
+  {
+    "id": "sunday-morning",
+    "name": "Manhã de Domingo",
+    "price": 48,
+    "tag": "O favorito de todos os dias",
+    "short": "Um raio de sol em forma de flores.",
+    "description": "Como abrir as cortinas em uma manhã tranquila de domingo. Rosas em tom creme, flores amarelas e pequenas margaridas se encontram em um arranjo leve e cheio de alegria.",
+    "varieties": "Rosas de jardim, ranúnculos, bocas-de-leão, camomila e eucalipto",
+    "palette": "Creme, amarelo suave e verde-claro",
+    "color": "cream",
+    "swatches": [
+      "#ebe2c0",
+      "#d6b863",
+      "#8a9875"
+    ],
+    "occasions": [
+      "Thank You",
+      "Thinking of You",
+      "Just Because"
+    ],
+    "style": "soft",
+    "lead": 2,
+    "alt": "Rosas creme, ranúnculos amarelos e pequenas margaridas brancas envoltos em papel marfim e kraft",
+    "colors": [
+      "original",
+      "yellow",
+      "pink",
+      "white",
+      "red",
+      "lilac"
+    ]
+  },
+  {
+    "id": "garden-party",
+    "name": "Festa no Jardim",
+    "price": 62,
+    "tag": "Uma pequena celebração",
+    "short": "A alegria de flores recém-colhidas.",
+    "description": "Um convite para celebrar, sem precisar de uma ocasião. Dálias pêssego, rosas coral, zínias cor-de-rosa e ásteres lilás se misturam com o encanto espontâneo de um jardim florido.",
+    "varieties": "Dálias, zínias, rosas de jardim, ásteres e folhagens da estação",
+    "palette": "Pêssego, coral, rosa vibrante e lilás",
+    "color": "pink",
+    "swatches": [
+      "#c78a72",
+      "#c75d7b",
+      "#a58ca9"
+    ],
+    "occasions": [
+      "Happy Birthday",
+      "Congratulations",
+      "Thank You",
+      "Just Because"
+    ],
+    "style": "bright",
+    "lead": 2,
+    "alt": "Dálias pêssego, rosas coral, zínias cor-de-rosa e ásteres lilás em um buquê envolto em papel",
+    "colors": [
+      "original",
+      "yellow",
+      "pink",
+      "white",
+      "red",
+      "lilac"
+    ]
+  },
+  {
+    "id": "softly-spoken",
+    "name": "Em Voz Baixa",
+    "price": 54,
+    "tag": "",
+    "short": "Para os momentos que mais importam.",
+    "description": "Algumas coisas ficam mais bonitas quando ditas com delicadeza. Rosas suaves, tons de malva e pequenas flores brancas formam um arranjo acolhedor para agradecer ou dizer: estou aqui.",
+    "varieties": "Rosas de jardim, lisianthus, escabiosas, astrântias e eucalipto",
+    "palette": "Rosa suave, malva e verde prateado",
+    "color": "blush",
+    "swatches": [
+      "#e1babb",
+      "#ab8b9c",
+      "#9aa798"
+    ],
+    "occasions": [
+      "Thinking of You",
+      "Thank You",
+      "Happy Birthday",
+      "Just Because"
+    ],
+    "style": "soft",
+    "lead": 2,
+    "alt": "Rosas claras, lisianthus malva, escabiosas delicadas e eucalipto em um buquê leve e acolhedor",
+    "colors": [
+      "original",
+      "yellow",
+      "pink",
+      "white",
+      "red",
+      "lilac"
+    ]
+  },
+  {
+    "id": "wild-at-heart",
+    "name": "Espírito Livre",
+    "price": 68,
+    "tag": "Um favorito da estação",
+    "short": "Um pouco de liberdade. Uma lembrança inesquecível.",
+    "description": "Para quem não cabe em um arranjo certinho. Dálias vinho, crisântemos em tons de ferrugem, ranúnculos laranja e ramos cheios de movimento criam um presente surpreendente.",
+    "varieties": "Dálias, ranúnculos, cosmos, crisântemos e folhagens silvestres",
+    "palette": "Vinho, laranja queimado, marfim e verde-escuro",
+    "color": "rich",
+    "swatches": [
+      "#742f42",
+      "#c07a4e",
+      "#56664a"
+    ],
+    "occasions": [
+      "Happy Birthday",
+      "Congratulations",
+      "Just Because"
+    ],
+    "style": "wild",
+    "lead": 5,
+    "alt": "Dálias vinho, ranúnculos laranja, cosmos marfim e folhagens silvestres envoltos em papel kraft",
+    "colors": [
+      "original",
+      "yellow",
+      "pink",
+      "white",
+      "red",
+      "lilac"
+    ]
+  },
+  {
+    "id": "sunflower",
+    "name": "Buquê de Girassóis",
+    "price": 58,
+    "tag": "Um presente cheio de sol",
+    "short": "Girassóis para iluminar o dia de alguém.",
+    "description": "Girassóis amarelos, pequenas margaridas brancas e eucalipto se encontram em um buquê alegre e acolhedor. Um presente luminoso para celebrar, agradecer ou espalhar carinho.",
+    "varieties": "Girassóis, margaridas e eucalipto",
+    "palette": "Amarelo dourado, branco e verde",
+    "color": "yellow",
+    "swatches": [
+      "#edc33c",
+      "#f4f0dc",
+      "#7d9270"
+    ],
+    "occasions": [
+      "Happy Birthday",
+      "Congratulations",
+      "Thank You",
+      "Just Because"
+    ],
+    "style": "bright",
+    "lead": 2,
+    "alt": "Buquê de girassóis amarelos, margaridas brancas e eucalipto envolto em papel marfim e kraft",
+    "colors": [
+      "original",
+      "yellow",
+      "white",
+      "pink"
+    ]
+  }
+]

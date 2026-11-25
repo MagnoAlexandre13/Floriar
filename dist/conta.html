@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minha conta — Petal & Stem</title>
+  <link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="account.css">
+  <script type="module" src="account.js"></script>
+</head>
+<body><main>
+  <nav aria-label="Navegação"><a class="brand" href="/">Petal & Stem.</a><a href="/">Voltar à loja</a></nav>
+  <p class="eyebrow">FLORES COM SENTIMENTO</p><h1>Um espaço para você.</h1>
+  <p>Entre ou crie uma conta para fazer e acompanhar seus pedidos demonstrativos.</p>
+  <p id="auth-notice" role="status" aria-live="polite">Conferindo sua sessão…</p>
+  <section id="account-panel" hidden aria-labelledby="account-title">
+    <h2 id="account-title">Sua conta</h2><p id="account-name"></p><p id="account-email"></p><p id="account-role"></p>
+    <div class="actions"><a class="button" id="continue" href="/cliente">Meus pedidos</a><button id="logout" type="button" class="secondary">Sair da conta</button></div>
+  </section>
+  <div class="grid" id="auth-forms" hidden>
+    <section aria-labelledby="login-title"><h2 id="login-title">Já tenho uma conta</h2>
+      <form id="login-form">
+        <label for="login-email">E-mail</label><input id="login-email" name="email" type="email" autocomplete="username" maxlength="254" required>
+        <label for="login-password">Senha</label><input id="login-password" name="password" type="password" autocomplete="current-password" maxlength="128" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+    <section aria-labelledby="register-title"><h2 id="register-title">Criar minha conta</h2>
+      <form id="register-form">
+        <label for="register-name">Nome</label><input id="register-name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+        <label for="register-email">E-mail</label><input id="register-email" name="email" type="email" autocomplete="username" maxlength="254" required>
+        <label for="register-password">Senha</label><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="10" maxlength="128" aria-describedby="password-help" required>
+        <p id="password-help" class="hint">Use de 10 a 128 caracteres. Você pode usar uma frase como senha.</p>
+        <label for="confirm-password">Confirme a senha</label><input id="confirm-password" type="password" autocomplete="new-password" minlength="10" maxlength="128" required>
+        <button type="submit">Criar conta</button>
+      </form>
+    </section>
+  </div>
+</main></body></html>

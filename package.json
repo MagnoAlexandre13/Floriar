@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
+    "dev:api": "python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8010",
+    "test:api": "python -B -m unittest discover -s tests -p test_*.py -v",
+    "test:api-browser": "playwright test --config playwright.api.config.mjs",
     "test": "node --test tests/shop.test.mjs",
-    "check": "node --check dist/app.js && node --check dist/shop.js"
+    "check": "node --check dist/app.js && node --check dist/shop.js && node --check dist/auth-api.js && node --check dist/account.js && node --check dist/session-nav.js && node --check backend/client.js && node --check scripts/serve.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

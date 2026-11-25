@@ -1,5 +1,22 @@
 # Final image prompts
 
+## Girassóis — arquivos adicionados
+
+Modo: ferramenta **imagegen integrada**. Arquivos de produção:
+`dist/assets/sunflower.webp`, `dist/assets/sunflower-small.webp` e
+`dist/assets/sunflower-detail.webp`. A miniatura deriva da foto principal.
+`scripts/prepare-sunflower-assets.py` converte e otimiza os originais sem
+modificá-los. Os originais permanecem em
+`C:/Users/DTIC/.codex/generated_images/01a1e99e-466d-7461-aa40-d43c36b4890d/`.
+
+Foto principal (`exec-f2725b7f-73ce-454d-bfab-ba53b20e0f74.png`), prompt final:
+
+Use case: photorealistic-natural. Asset type: premium boutique florist website product photograph. Create one portrait 4:5 editorial photograph of a hand-tied bouquet dominated by golden yellow sunflowers with dark brown centers, tiny white chamomile daisies and soft green eucalyptus, wrapped in ivory tissue and brown kraft paper and tied with a simple natural ribbon. Entire bouquet including tied stems fits comfortably in frame, fills 80 percent, leaning casually against a warm pale beige plaster wall on a light oak florist table. Flower eye-level view. Soft natural window light from the left, subtle shadows, tactile analog film aesthetic, realistic botanical anatomy and restrained warm colors matching an elegant cream and forest green florist storefront. No vase, no people, no text, no letters, no watermark, no logos, no borders. This asset will be saved as sunflower main product photo; make real sunflowers unmistakable.
+
+Foto de detalhe (`exec-e26a59de-242f-4354-89b4-8c7a406ec554.png`), usando a foto principal como referência, prompt final:
+
+Use case: photorealistic-natural. Asset type: alternate product photograph for the exact sunflower bouquet in the provided reference. The attached image is a product identity reference. Create a genuine different camera view: an overhead three-quarter close photograph of this same bouquet laid gently on a light oak florist workbench, flower heads toward upper left and the tied stems toward lower right. Preserve the same golden yellow sunflowers with dark brown centers, tiny white chamomile, eucalyptus, ivory tissue, brown kraft paper and plain natural ribbon. Keep roughly the same five sunflower heads and bouquet abundance. Soft warm window light from the left, tactile botanical details, realistic anatomy, muted editorial analog-film style. Portrait 4:5 composition. No people, no text, no logos, no extra accessories. Do not crop or simply duplicate the original eye-level image.
+
 Mode: **built-in imagegen**, with a separate generation for each asset. Alternate product photographs reference the corresponding generated main product photograph. Files are saved in `dist/assets/` as WebP; the unmodified generated PNG originals remain at the default imagegen destination. `scripts/prepare-assets.py` documents the exact original-to-production mapping and performs only format/size optimization.
 
 ## Hero — `dist/assets/hero.webp`
